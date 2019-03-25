@@ -1,29 +1,124 @@
+/*Global*/
 body {
-	font-family: "Arial", sans-serif;
-	font-size: 16px;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.857142857;
+	color: #7c7c7c;
 }
-
 h1, h2, h3, h4, h5, h6, ul {
 	padding: 0;
 	margin: 0;
 }
-
-.container {
-	@include container();
-	@include sm(max-width, 510px);
-	@include md(max-width, 690px);
-	@include lg(max-width, 930px);
-	@include xl(max-width, 1110px);
+a {
+	text-decoration: none;
 }
-
-.img-responsive {
-	max-width: 500px;
-	width: 100%;
-	height: auto;
+$headercolor: #494949;
+$auxiliarycolor: #ffffff;
+/*headers*/
+.header24 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 2.4px;
+	color: $headercolor;
+	text-transform: uppercase;
+	text-align: center;
+	&__subheader {
+		display: block;
+		font-size: 18px;
+		line-height: 1.333333333;
+		letter-spacing: normal;
+		color: #7c7c7c;
+		text-transform: none;
+	}
+	&::after {
+		display: block;
+		content: '';
+		width: 30px;
+		border-top: 2px solid #2eb0ec;
+		margin: 0 auto;
+	}
+}
+.header32 {
+	font-size: 32px;
+	font-weight: 600;
+	color: $headercolor;
+	&__subheader {
+		display: block;
+		font-size: 22px;
+		color: rgba(73,73,73,0.4);
+	}
+}
+/*buttons*/ 
+.btn-rrect {
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	color: $auxiliarycolor;
+	background-color: #66d4f4;
+	box-shadow: 0px 10px 16px 0px rgba(102, 212, 244, 0.3);
+	border-radius: 25px;
+} 
+/*main styles*/
+.page-main {
+	background-image: url(../img/header/header_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logo {
+		display: block;
+		width: 168px;
+		height: 51px;
+		background-image: url(../img/header/logo.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	&-list {
+		display: flex;
+		list-style-type: none;
+		&__item {
+			font-size: 17px;
+			font-weight: 600;
+			color: $auxiliarycolor;
+			text-transform: uppercase;
+		}
+		&__btn {
+			letter-spacing: 1.7px;
+			border-radius: 10px;
+			background-color: rgba(71, 158, 225, 0.8);
+			padding: 18px 25px 17px;
+		}
+	}
+}
+.header-box {
+	&__title {
+		font-family: 'Museo_Slab', serif;
+		font-weight: 500;
+		font-size: 40px;
+		color: #fffefe;
+	}
+	&-mainlinks {
+		display: flex;
+		&__gstore {
+			width: 240px;
+			height: 80px;
+			background-image: url(../img/header/google_store.png);
+			box-shadow: 0px 8px 11px 0px rgba(54, 54, 54, 0.15);
+			border-radius: 10px;
+			margin-right: 29px;
+		}
+		&__btnheader {
+			font-size: 20px;
+			font-weight: 600;
+			color: $auxiliarycolor;
+			border-radius: 10px;
+			background-color: rgba(72, 148, 206, 0.7);
+			padding: 21px 67px;
+		}
+	}
 }
