@@ -13,9 +13,25 @@ h1, h2, h3, h4, h5, h6, ul {
 a {
 	text-decoration: none;
 }
+.wrapper {
+	width: 1110px;
+	margin: 0 auto;
+}
+button:hover {
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
 $headercolor: #494949;
 $auxiliarycolor: #ffffff;
-/*headers*/
+$secondarycolor: #42a8f6;
+%for-backgrounds {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*h2*/
 .header24 {
 	font-family: 'Roboto Slab', serif;
 	font-size: 24px;
@@ -58,21 +74,26 @@ $auxiliarycolor: #ffffff;
 	background-color: #66d4f4;
 	box-shadow: 0px 10px 16px 0px rgba(102, 212, 244, 0.3);
 	border-radius: 25px;
+	padding: 17px 33px;
+	transition: box-shadow 0.2s, background-color 0.2s;
+	&:hover, &:focus {
+		box-shadow: 0px 10px 16px 0px rgba(66, 168, 246, 0.7);
+		background-color: $secondarycolor;
+	}
 } 
-/*main styles*/
-.page-main {
-	background-image: url(../img/header/header_background.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+/*Main Styles*/
+/*header*/
 .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 1110px;
+	margin: 0 auto 123px;
+	padding-bottom: 37px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 	&__logo {
 		display: block;
-		width: 168px;
+		flex-basis: 168px;
 		height: 51px;
 		background-image: url(../img/header/logo.svg);
 		background-repeat: no-repeat;
@@ -80,27 +101,51 @@ $auxiliarycolor: #ffffff;
 	}
 	&-list {
 		display: flex;
+		justify-content: space-between;
+		flex-basis: 61.5%;
 		list-style-type: none;
 		&__item {
 			font-size: 17px;
 			font-weight: 600;
 			color: $auxiliarycolor;
 			text-transform: uppercase;
+			transition: color 0.2s;
+			&:hover, &:focus {
+				color: $headercolor;
+			}
 		}
 		&__btn {
 			letter-spacing: 1.7px;
 			border-radius: 10px;
 			background-color: rgba(71, 158, 225, 0.8);
 			padding: 18px 25px 17px;
+			transition: color 0.2s, background-color 0.2s;
+			&:hover, &:focus {
+				background-color: rgba(207, 222, 249, 0.5);
+			}
 		}
 	}
 }
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
 .header-box {
+	flex-basis: 510px;
 	&__title {
 		font-family: 'Museo_Slab', serif;
 		font-weight: 500;
 		font-size: 40px;
 		color: #fffefe;
+		margin: 120px 0 11px;
+		white-space: pre-wrap;
+	}
+	&__maintext {
+		font-size: 26px;
+		font-weight: 500;
+		line-height: 1.538461538;
+		color: #fefefe;
+		margin: 0 0 65px;
 	}
 	&-mainlinks {
 		display: flex;
@@ -118,7 +163,34 @@ $auxiliarycolor: #ffffff;
 			color: $auxiliarycolor;
 			border-radius: 10px;
 			background-color: rgba(72, 148, 206, 0.7);
-			padding: 21px 67px;
+			padding: 23px 67px 19px;
+			transition: color 0.2s, background-color 0.2s;
+			&:hover, &:focus {
+				color: $headercolor;
+				background-color: rgba(207, 222, 249, 0.5);
+			}
 		}
 	}
+}
+.header-img {
+	flex-basis: 459px;
+	height: 680px;
+	background-image: url(../img/header/phone.png);
+}
+/*page-form*/
+.subscribe-form {
+	&__btn {
+		border: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 1.6px;
+		border-radius: 37.5px;
+		padding: 29px 134px 28px;
+	}
+}
+/*Pages backgrounds and paddings*/
+.page-main {
+	padding: 45px 0 0;
+	background-image: url(../img/header/header_background.png);
+	@extend %for-backgrounds;
 }
