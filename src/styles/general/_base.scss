@@ -23,9 +23,10 @@ button:hover {
 button:focus {
     outline: none;
 }
-$headercolor: #494949;
+$typographycolor: #494949;
 $auxiliarycolor: #ffffff;
 $secondarycolor: #42a8f6;
+$basecolor: #66d4f4;
 %for-backgrounds {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -37,7 +38,7 @@ $secondarycolor: #42a8f6;
 	font-size: 24px;
 	font-weight: 400;
 	letter-spacing: 2.4px;
-	color: $headercolor;
+	color: $typographycolor;
 	text-transform: uppercase;
 	text-align: center;
 	&__subheader {
@@ -53,13 +54,13 @@ $secondarycolor: #42a8f6;
 		content: '';
 		width: 30px;
 		border-top: 2px solid #2eb0ec;
-		margin: 0 auto;
+		margin: 10px auto 0;
 	}
 }
 .header32 {
 	font-size: 32px;
 	font-weight: 600;
-	color: $headercolor;
+	color: $typographycolor;
 	&__subheader {
 		display: block;
 		font-size: 22px;
@@ -70,8 +71,9 @@ $secondarycolor: #42a8f6;
 .btn-rrect {
 	font-weight: 700;
 	letter-spacing: 1.4px;
+	text-transform: uppercase;
 	color: $auxiliarycolor;
-	background-color: #66d4f4;
+	background-color: $basecolor;
 	box-shadow: 0px 10px 16px 0px rgba(102, 212, 244, 0.3);
 	border-radius: 25px;
 	padding: 17px 33px;
@@ -111,7 +113,7 @@ $secondarycolor: #42a8f6;
 			text-transform: uppercase;
 			transition: color 0.2s;
 			&:hover, &:focus {
-				color: $headercolor;
+				color: $typographycolor;
 			}
 		}
 		&__btn {
@@ -166,7 +168,7 @@ $secondarycolor: #42a8f6;
 			padding: 23px 67px 19px;
 			transition: color 0.2s, background-color 0.2s;
 			&:hover, &:focus {
-				color: $headercolor;
+				color: $typographycolor;
 				background-color: rgba(207, 222, 249, 0.5);
 			}
 		}
@@ -177,11 +179,152 @@ $secondarycolor: #42a8f6;
 	height: 680px;
 	background-image: url(../img/header/phone.png);
 }
+/*page-services*/
+.box-services {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 85px;
+	&__item {
+		flex-basis: 28.2%;
+	}
+	&__ico {
+		height: 106px;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 36px;
+		&-browser {
+			background-image: url(../img/services/browser_ico.svg);
+		}
+		&-camera {
+			background-image: url(../img/services/camera_ico.svg);
+		}
+		&-brush {
+			background-image: url(../img/services/brush_ico.svg);
+		}
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		color: $typographycolor;
+		margin-bottom: 19px;
+	}
+}
+/*page-features*/
+.page-features__img {
+	position: absolute;
+	top: 117px;
+	left: 0;
+	width: 43.5%;
+	max-width: 696px;
+	/* height: 694px; */
+	padding-top: 41.75%;
+	background-image: url(../img/features/iPad_and_iPhone.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.features-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+.box-features {
+	flex-basis: 48.7%;
+	&__text {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.6;
+		margin: 8px 0 55px;
+	}
+	&-list {
+		list-style-type: none;
+		margin-bottom: 60px;
+		&__item {
+			margin-bottom: 13px;
+			&::before {
+				display: inline-block;
+				content: '';
+				width: 20px;
+				height: 20px;
+				background-color: $basecolor;
+				border: 4.44px solid #c8ebf5;
+				border-radius: 50%;
+				box-sizing: border-box;
+				margin-right: 20px;
+				vertical-align: middle;
+
+			}
+		}
+	}
+	&__btn {
+		&_size_l {
+			padding: 18px 28px 16px 29px;
+			position: relative;
+			left: 6px;
+		}
+	}
+}
+/*page-grid*/
+.grid {
+	display: grid;
+	grid-template-areas: "a b c"
+						 "d e f";
+	column-gap: 30px;
+	margin-top: 105px;
+	&__item {
+		&-idea  {grid-area: a;}
+		&-code  {grid-area: b;}
+		&-game  {grid-area: c;}
+		&-resp  {grid-area: d;}
+		&-shop  {grid-area: e;}
+		&-bonus {grid-area: f;}
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		color: $typographycolor;
+		&::before {
+			display: inline-block;
+			content: '';
+			vertical-align: middle;
+			width: 65px;
+			height: 54px;
+			background-repeat: no-repeat;
+			background-position-y: center;
+		}
+	}
+	&__text {
+		margin: 0 21px 88px 66px;
+	}
+}
+.lamp-ico::before {
+	background-image: url(../img/grid/lightbulb_ico.svg);
+	background-position-x: 7px;
+}
+.browser-ico::before {
+	background-image: url(../img/grid/browser_ico.svg);
+	background-position-x: 1px;
+}
+.gamepad-ico::before {
+	background-image: url(../img/grid/game_ico.svg);
+	background-position-x: 1px;
+}
+.downsize-ico::before {
+	background-image: url(../img/grid/decrease_ico.svg);
+    background-position-x: 11px;
+	background-size: 34px 39px;
+}
+.cart-ico::before {
+	background-image: url(../img/grid/cart_ico.svg);
+	background-position-x: 2px;
+}
+.gift-ico::before {
+	background-image: url(../img/grid/gift_ico.svg);
+	background-position-x: 3px;
+}
 /*page-form*/
 .subscribe-form {
 	&__btn {
 		border: none;
-		text-transform: uppercase;
 		font-size: 16px;
 		letter-spacing: 1.6px;
 		border-radius: 37.5px;
@@ -192,5 +335,21 @@ $secondarycolor: #42a8f6;
 .page-main {
 	padding: 45px 0 0;
 	background-image: url(../img/header/header_background.png);
+	@extend %for-backgrounds;
+}
+.page-services {
+	padding: 91px 0 148px;
+}
+.page-features {
+	position: relative;
+	padding: 126px 0 199px;
+	background-image: url(../img/features/feature_background.png);
+	@extend %for-backgrounds;
+}
+.page-grid {
+	padding: 48px 0 26px;
+}
+.page-testimonials {
+	background-image: url(../img/slider/slider_background.png);
 	@extend %for-backgrounds;
 }
