@@ -1,5 +1,4 @@
-@media all and (-ms-high-contrast:none)
-{
+@media all and (-ms-high-contrast:none) {
     .header-box {
         &-mainlinks {
             &__btnheader {
@@ -9,16 +8,6 @@
     }
     .grid {
         display: -ms-grid;
-        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
-        -ms-grid-rows: 1fr 1fr;
-        &__item {
-            &-idea  {-ms-grid-column: 1;-ms-grid-row: 1;}
-            &-code  {-ms-grid-column: 3;-ms-grid-row: 1;}
-            &-game  {-ms-grid-column: 5;-ms-grid-row: 1;}
-            &-resp  {-ms-grid-column: 1;-ms-grid-row: 2;}
-            &-shop  {-ms-grid-column: 3;-ms-grid-row: 2;}
-            &-bonus {-ms-grid-column: 5;-ms-grid-row: 2;}
-        }
     }
     .lamp-ico::before {
         background-position-x: 0;
@@ -38,74 +27,44 @@
     .gift-ico::before {
         background-position-x: -8px;
     }
-/*     .grid-title {
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
+}
+@media screen and (min-width: 1065px) and (-ms-high-contrast:none) {
+    .grid {
+        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+        &__item {
+            &-idea  {-ms-grid-column: 1;-ms-grid-row: 1;}
+            &-code  {-ms-grid-column: 3;-ms-grid-row: 1;}
+            &-game  {-ms-grid-column: 5;-ms-grid-row: 1;}
+            &-resp  {-ms-grid-column: 1;-ms-grid-row: 2;}
+            &-shop  {-ms-grid-column: 3;-ms-grid-row: 2;}
+            &-bonus {-ms-grid-column: 5;-ms-grid-row: 2;}
+        }
     }
-    .grid-item-1 {
-        -ms-grid-column: 1;
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
+}
+@media screen and (max-width: 1064px) and (-ms-high-contrast:none) {
+    .grid {
+        -ms-grid-columns: 1fr 350px 30px 350px 1fr;
+        &__item {
+            &-idea  {-ms-grid-column: 2;-ms-grid-row: 1;}
+            &-code  {-ms-grid-column: 4;-ms-grid-row: 1;}
+            &-game  {-ms-grid-column: 2;-ms-grid-row: 2;}
+            &-resp  {-ms-grid-column: 4;-ms-grid-row: 2;}
+            &-shop  {-ms-grid-column: 2;-ms-grid-row: 3;}
+            &-bonus {-ms-grid-column: 4;-ms-grid-row: 3;}
+        }
     }
-    .grid-item-2 {
-        -ms-grid-column: 3;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 3;
+}
+@media screen and (max-width: 780px) and (-ms-high-contrast:none) {
+    /*page-grid*/
+    .grid {
+        -ms-grid-columns: 1fr minmax(min-content, 488px) 1fr;
+        &__item {
+            &-idea  {-ms-grid-column: 2;-ms-grid-row: 1;}
+            &-code  {-ms-grid-column: 2;-ms-grid-row: 2;}
+            &-game  {-ms-grid-column: 2;-ms-grid-row: 3;}
+            &-resp  {-ms-grid-column: 2;-ms-grid-row: 4;}
+            &-shop  {-ms-grid-column: 2;-ms-grid-row: 5;}
+            &-bonus {-ms-grid-column: 2;-ms-grid-row: 6;}
+        }
     }
-    .grid-item-3 {
-        -ms-grid-column: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 3;
-    }
-    .grid-item-4 {
-        -ms-grid-column: 1;
-        -ms-grid-row: 7;
-        -ms-grid-row-span: 3;
-    }
-    .grid-item-5 {
-        -ms-grid-column: 3;
-        -ms-grid-row: 5;
-        -ms-grid-row-span: 3;
-    }
-    .grid-item-6 {
-        -ms-grid-column: 5;
-        -ms-grid-row: 5;
-        -ms-grid-row-span: 3;
-    } */
-/*     .grid-text {
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 3;
-        -ms-grid-row: 9;
-        margin-top: 13px;
-    }
-    .grid-item-1, .grid-item-4 {
-        margin: -31px 0 31px;
-    }
-    .subscribe-email {
-        height: 16px;
-    }
-    .soft-desc {
-        scrollbar-base-color: #1085e4;
-        scrollbar-track-color: #f3f6ff;
-        scrollbar-arrow-color: #f3f6ff;
-        scrollbar-shadow-color: #1085e4;
-    }
-    .app-video img,
-    .stats1,
-    .stats2,
-    .stats3 {
-        width: 100%;
-    }
-    .app-video img {
-        max-width: 561px;
-    }
-    .stats1 {
-        max-width: 473px;
-    }
-    .stats2 {
-        max-width: 461px;
-    }
-    .stats3 {
-        max-width: 460px;
-    } */
 }

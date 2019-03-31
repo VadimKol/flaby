@@ -16,6 +16,7 @@ a {
 .wrapper {
 	max-width: 1110px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 button:hover {
     cursor: pointer;
@@ -584,29 +585,30 @@ button:focus {
 	&__item {
 		display: block;
 		margin: 0 auto 26px;
-		width: calc(100% - 60px);
+		width: calc(100% - 62px);
 		padding: 29px 30px 28px;
 		border-radius: 37.5px;
 		border: 1px solid rgba(0,0,0, 0.03);
 		box-shadow: 0px 8px 16px 0px rgba(92, 149, 161, 0.07);
 		transition: border 0.2s;
-		&::placeholder               {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;}
-		&::-webkit-input-placeholder {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;}
-		&::-moz-placeholder          {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;opacity: 1;}
-		&:-moz-placeholder           {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;}
-		&:-ms-input-placeholder      {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;}
-		&::-ms-input-placeholder     {text-indent: 77px;color: rgba(80,80,80,0.35);font-weight: 700;}
+		/*не работает calc в text-indent в placeholder в ie11 text-indent: calc(50% - 77px);*/
+		&::placeholder               {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;}
+		&::-webkit-input-placeholder {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;}
+		&::-moz-placeholder          {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;opacity: 1;}
+		&:-moz-placeholder           {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;}
+		&:-ms-input-placeholder      {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;}
+		&::-ms-input-placeholder     {text-align: center;color: rgba(80,80,80,0.35);font-weight: 700;}
 		&:focus {
 			outline: none;
 			border: 1px solid rgba(0,0,0, 0.3);
 		}
 		&-text {
-			&::placeholder               {color: #7c7c7c;}
-			&::-webkit-input-placeholder {color: #7c7c7c;}
-			&::-moz-placeholder          {color: #7c7c7c;}
-			&:-moz-placeholder           {color: #7c7c7c;}
-			&:-ms-input-placeholder      {color: #7c7c7c;}
-			&::-ms-input-placeholder     {color: #7c7c7c;}
+			&::placeholder               {text-indent: -64px;color: #7c7c7c;}
+			&::-webkit-input-placeholder {text-indent: -64px;color: #7c7c7c;}
+			&::-moz-placeholder          {text-indent: -64px;color: #7c7c7c;}
+			&:-moz-placeholder           {text-indent: -64px;color: #7c7c7c;}
+			&:-ms-input-placeholder      {text-indent: -64px;color: #7c7c7c;}
+			&::-ms-input-placeholder     {text-indent: -64px;color: #7c7c7c;}
 		}
 	}
 	&__btn {
@@ -614,14 +616,18 @@ button:focus {
 		font-size: 16px;
 		letter-spacing: 1.6px;
 		border-radius: 37.5px;
-		padding: 29px 133px 28px 134px;
+		padding: 29px 0 28px;
+		width: 100%;
 	}
 }
 /*page-links*/
 .dividor {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
-	border-bottom: 1px solid #dfdfdf;
+	padding: 0 15px;
+	height: 1px;
+	background-color: #dfdfdf;
+	background-clip: content-box;
 }
 .links-wrapper {
 	display: flex;
@@ -630,7 +636,7 @@ button:focus {
 }
 .main-links {
 	flex-basis: 19%;
-	margin-right: 10.180180180%; /*113px*/
+	margin-right: 10.180180180%;
 	margin-top: 15px;
 	&__logo {
 		display: block;
@@ -700,7 +706,7 @@ button:focus {
 }
 /*footer*/
 .footer-wrapper {
-	padding: 32px 0 37px;
+	padding: 32px 30px 37px;
 }
 .footer-text {
 	list-style-type: none;
