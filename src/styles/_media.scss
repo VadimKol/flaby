@@ -17,6 +17,31 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: 1024px) {
+    /*page-plans*/
+    .page-plans {
+        padding: 31px 0 60px;
+        background-size: auto;
+        background-position: center bottom;
+        background-color: #f4fbfc;
+    }
+    .plans-flex {
+        flex-direction: column;
+        align-items: center;
+        margin: 51px 0 0;
+        &-item {
+            margin: 0 0 20px;
+            width: 91.578947369%;
+            max-width: 520px;
+            flex-basis: auto;
+            background-position: center 4%;
+        }
+    }
+    .plans-flex-item_active {
+        width: 100%;
+        max-width: 568px;
+    }
+}
 @media screen and (max-width: 800px) {
     /*page-services*/
     .page-services {
