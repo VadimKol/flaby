@@ -53,10 +53,12 @@ button:focus {
 	font-size: 32px;
 	font-weight: 600;
 	color: $typographycolor;
+	line-height: normal;
 	&__subheader {
 		display: block;
 		font-size: 22px;
 		color: rgba(73,73,73,0.4);
+		margin-bottom: 16px
 	}
 }
 /*buttons*/ 
@@ -225,7 +227,7 @@ button:focus {
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 1.6;
-		margin: 8px 0 55px;
+		margin: 21px 0 55px;
 	}
 	&-list {
 		list-style-type: none;
@@ -434,6 +436,7 @@ button:focus {
 .resources-wrapper {
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 .box-resources {
 	flex-basis: 41%;
@@ -441,13 +444,14 @@ button:focus {
 	&__text {
 		font-size: 20px;
 		line-height: 1.6;
-		margin: 8px 0 28px;
+		margin: 21px 0 28px;
 	}
 }
 .resources-schema {
 	max-width: 100%;
 	position: relative;
-	bottom: 5px;
+	bottom: 12px;
+	max-height: 320px;
 }
 /*page-plans*/
 .plans-flex {
@@ -564,7 +568,7 @@ button:focus {
 	}
 	.plans-flex-item-list {
 		font-size: 16px;
-		margin-bottom: 60px;
+		margin-bottom: 59px;
 	}
 	.plans-flex-item__btn {
 		font-size: 16px;
@@ -742,7 +746,7 @@ button:focus {
 }
 .page-features {
 	position: relative;
-	padding: 126px 0 188px;
+	padding: 133px 0 188px;
 	background-image: url(../img/features/feature_background.png);
 	@extend %for-backgrounds;
 }
@@ -755,7 +759,7 @@ button:focus {
 	@extend %for-backgrounds;
 }
 .page-resources {
-	padding: 166px 0 145px;
+	padding: 173px 0 138px;
 }
 .page-plans {
 	padding: 62px 0 120px;
