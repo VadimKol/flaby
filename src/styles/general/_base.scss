@@ -393,11 +393,13 @@ button:focus {
 			position: relative;
 			border: 1px solid rgba(0,0,0, 0.08);
 			box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08);
+			width: 65.765765765%;
 			max-width: 730px;
 			margin: 0 auto;
 			text-align: center;
-			padding: 80px 68px 85px;
+			padding: 80px 68px 25px;
 			box-sizing: border-box;
+			height: 351px;
 			&__avatar {
 				position: absolute;
 				top: -46px;
@@ -433,14 +435,14 @@ button:focus {
 			margin: 0 auto;
 		}
 		&-middle {
-			width: 100%;
+			width: 71.171171171%;
 			max-width: 790px;
 			height: 309px;
 			top: 138px;
 			opacity: 0.8;
 		}
 		&-latest {
-			width: 100%;
+			width: 75.945945945%;
 			max-width: 843px;
 			height: 257px;
 			top: 165px;

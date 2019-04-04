@@ -51,6 +51,21 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    /*page-testimonials*/
+    .page-testimonials {
+        padding: 43px 0;
+    }
+    .slider {
+        &-box {
+            padding: 59px 0 0;
+            &-middle {
+                top: 80px;
+            }
+            &-latest {
+                top: 107px;
+            }
+        }
+    }
     /*page-plans*/
     .page-plans {
         padding: 31px 0 60px;
@@ -158,6 +173,16 @@
         grid-template-columns: minmax(auto, 488px);
     }
 }
+@media screen and (max-width: 696px) {
+    /*page-testimonials*/
+    .slider {
+        &-box {
+            &-front {
+                padding: 80px 10px 25px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 650px) {
     /*header*/
     .page-main {
@@ -200,6 +225,32 @@
         }
     }
 }
+@media screen and (max-width: 520px) {
+    /*page-testimonials*/
+    .slider {
+        &-box {
+            &-front {
+                width: 80.180180180%;
+                box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+                height: 326px;
+                &__text {
+                    font-size: 16px;
+                }
+            }
+            &-middle, &-latest {
+                box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.11);
+            }
+            &-middle {
+                width: 85.585585585%;
+                height: 284px;
+            }
+            &-latest {
+                width: 90.360360360%;
+                height: 232px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 500px) {
     /*page-services*/
     .box-services {
@@ -234,6 +285,18 @@
         .header32 {
             &__subheader {
                 font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 395px) {
+    /*page-testimonials*/
+    .slider {
+        &-box {
+            &-front {
+                &__text {
+                    font-size: 12px;
+                }
             }
         }
     }
