@@ -1,12 +1,3 @@
-@media screen and (max-width: 1200px) {
-    /*header*/
-    .nav {
-        &::after {
-            width: calc(100% - 30px);
-            left: 15px;
-        }
-    }
-}
 @media screen and (max-width: 1160px) {
     /*page-grid*/
     .grid {
