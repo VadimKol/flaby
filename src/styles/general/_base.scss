@@ -99,7 +99,7 @@ button:focus {
 		display: block;
 		flex-basis: 168px;
 		height: 51px;
-		background-image: url(../img/header/logo.svg);
+		background-image: url(../img/icons/header/logo.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -158,7 +158,7 @@ button:focus {
 				width: 44px;
 				height: 44px;
 				@extend %for-btns;
-				background-image: url(../img/cross.svg);
+				background-image: url(../img/icons/header/cross.svg);
 				background-repeat: no-repeat;
 				background-size: cover;
 				vertical-align: bottom;
@@ -170,7 +170,7 @@ button:focus {
 		width: 55px;
 		height: 55px;
 		@extend %for-btns;
-		background-image: url(../img/menu.svg);
+		background-image: url(../img/icons/header/menu.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -245,13 +245,13 @@ button:focus {
 		background-position: center;
 		margin-bottom: 36px;
 		&-browser {
-			background-image: url(../img/services/browser_ico.svg);
+			background-image: url(../img/icons/services/browser_ico.svg);
 		}
 		&-camera {
-			background-image: url(../img/services/camera_ico.svg);
+			background-image: url(../img/icons/services/camera_ico.svg);
 		}
 		&-brush {
-			background-image: url(../img/services/brush_ico.svg);
+			background-image: url(../img/icons/services/brush_ico.svg);
 		}
 	}
 	&__title {
@@ -349,28 +349,28 @@ button:focus {
 	}
 }
 .lamp-ico::before {
-	background-image: url(../img/grid/lightbulb_ico.svg);
+	background-image: url(../img/icons/grid/lightbulb_ico.svg);
 	background-position-x: 7px;
 }
 .browser-ico::before {
-	background-image: url(../img/grid/browser_ico.svg);
+	background-image: url(../img/icons/grid/browser_ico.svg);
 	background-position-x: 1px;
 }
 .gamepad-ico::before {
-	background-image: url(../img/grid/game_ico.svg);
+	background-image: url(../img/icons/grid/game_ico.svg);
 	background-position-x: 1px;
 }
 .downsize-ico::before {
-	background-image: url(../img/grid/decrease_ico.svg);
+	background-image: url(../img/icons/grid/decrease_ico.svg);
     background-position-x: 11px;
 	background-size: 34px 39px;
 }
 .cart-ico::before {
-	background-image: url(../img/grid/cart_ico.svg);
+	background-image: url(../img/icons/grid/cart_ico.svg);
 	background-position-x: 2px;
 }
 .gift-ico::before {
-	background-image: url(../img/grid/gift_ico.svg);
+	background-image: url(../img/icons/grid/gift_ico.svg);
 	background-position-x: 3px;
 }
 /*page-testimonials*/
@@ -480,11 +480,11 @@ button:focus {
     		top: 0;
 		}
 		&-previcon {
-			background-image: url(../img/slider/arrow_previous_ico.svg);
+			background-image: url(../img/icons/slider/arrow_previous_ico.svg);
 			left: -48px;
 		}
 		&-nexticon {
-			background-image: url(../img/slider/arrow_next_ico.svg);
+			background-image: url(../img/icons/slider/arrow_next_ico.svg);
 			right: -50px;
 		}
 	}
@@ -692,18 +692,16 @@ button:focus {
 }
 .links-wrapper {
 	display: flex;
-	margin-top: 58px;
 	margin: 43px auto 76px;
 }
 .main-links {
-	flex-basis: 19%;
-	margin-right: 10.180180180%;
-	margin-top: 15px;
+	flex-basis: 210px;
+	margin: 15px 113px 0 0;
 	&__logo {
 		display: block;
 		width: 143px;
 		height: 44px;
-		background-image: url(../img/logo_black.svg);
+		background-image: url(../img/icons/logo_black.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-left: 2px;
@@ -717,6 +715,9 @@ button:focus {
 		list-style-type: none;
 		li {
 			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&__item {
 			color: #ffffff;
@@ -728,7 +729,7 @@ button:focus {
 				display: inline-block;
 				padding: 0;
 				height: 30px;
-				background-image: url(../img/google-plus.svg);
+				background-image: url(../img/icons/google-plus.svg);
 				vertical-align: bottom;
 				border-radius: 0;
 			}

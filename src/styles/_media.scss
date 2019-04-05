@@ -17,6 +17,13 @@
     .resources-schema {
         position: static;
     }
+    /*page-links*/
+    .links-wrapper {
+        justify-content: space-between;
+    }
+    .main-links {
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 1100px) {
     /*page-features*/
@@ -176,6 +183,26 @@
         grid-template-areas: "a" "b" "c" "d" "e" "f";
         grid-template-columns: minmax(auto, 488px);
     }
+    /*page-links*/
+    .links-wrapper {
+        flex-wrap: wrap;
+        margin: 21px auto 38px;
+        justify-content: center;
+    }
+    .main-links {
+        margin: 0 auto 20px;
+        flex-basis: 100%;
+        text-align: center;
+        &__logo {
+            margin: 0 auto;
+        }
+        &-social {
+            justify-content: center;
+        }
+    }
+    .additional-links {
+        flex-basis: 585px;
+    }
 }
 @media screen and (max-width: 700px) {
     /*page-testimonials*/
@@ -260,6 +287,21 @@
     .box-services {
         &__item {
             width: 100%;
+        }
+    }
+    /*page-links*/
+    .links-wrapper {
+        margin: 21px auto 25px;
+    }
+    .additional-links {
+        flex-wrap: wrap;
+        &-item {
+            flex-basis: 50%;
+            text-align: center;
+            margin-bottom: 13px;
+            &__title {
+                margin-bottom: 0;
+            }
         }
     }
 }
