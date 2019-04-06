@@ -233,6 +233,7 @@ button:focus {
 /*page-services*/
 .box-services {
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-around;
 	text-align: center;
 	margin-top: 85px;
