@@ -266,7 +266,7 @@ export const favs = () => gulp.src(paths.favicons.src)
 			favicons: true,
 			online: false,
 			appleStartup: false,
-			android: false,
+			android: true,
 			firefox: false,
 			yandex: false,
 			windows: false,
