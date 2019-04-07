@@ -79,10 +79,14 @@ button:focus {
 } 
 /*Main Styles*/
 /*header*/
+/* header {
+	position: relative;
+} */
 .nav {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	-webkit-box-lines: multiple;
 	align-items: center;
 	max-width: 1110px;
 	margin: 0 auto 159px;
@@ -94,6 +98,15 @@ button:focus {
 		margin: 0 auto;
 		position: relative;
 		bottom: -37px;
+/* 		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -38px;
+		background-clip: content-box;
+		box-sizing: border-box;
+		max-width: 1140px;
+		width: 100%;
+		padding: 0 15px; */
 	}
 	&__logo {
 		display: block;

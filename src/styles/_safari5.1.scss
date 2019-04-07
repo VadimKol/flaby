@@ -18,6 +18,9 @@
 #{$safari} .header-img {
     width: 41.351351351%;
 }
+#{$safari} .box-services__item {
+    width: 28.2%;
+}
 #{$safari} .grid-item {
     width: 488px;
     margin: 0 auto;
@@ -28,6 +31,8 @@
 #{$safari} .subscribe-form__item {
     width: 83.243243243%;
 }
+#{$safari} .subscribe-form__item-text::placeholder {text-indent: 0;}
+#{$safari} .subscribe-form__item-text::-webkit-input-placeholder {text-indent: 0;}
 #{$safari} .main-links {
     width: 210px;
 }
