@@ -1,0 +1,67 @@
+/* Safari 5.1-6.0, Chrome 10-24 */
+#{$safari} .nav__logo {
+    width: 168px;
+    background-image: url(../img/header/logo.png);
+}
+#{$safari} .nav-list {
+    width: 61.5%;
+}
+#{$safari} .header-box {
+    width: 510px;
+}
+#{$safari} .header-box-mainlinks__gstore,
+#{$safari} .header-box-mainlinks__btnheader {
+    display: block;
+}
+#{$safari} .header-box-mainlinks__gstore {
+    width: 240px;
+}
+#{$safari} .header-img {
+    width: 41.351351351%;
+}
+#{$safari} .box-services__item {
+    width: 28.2%;
+}
+#{$safari} .grid {
+    width: 59%;
+    margin: 0 auto;
+}
+#{$safari} .downsize-ico::before {
+    background-size: auto;
+    background-position: center;
+}
+#{$safari} .box-resources {
+    width: 41%;
+}
+#{$safari} .plans-flex-item__price svg text {
+    fill: #2eb0ec;
+}
+#{$safari} .plans-flex-item__price .dollar_super {
+    left: 38.9%;
+}
+#{$safari} .plans-flex-item_active .plans-flex-item__price .dollar_super {
+    left: 38.8%;
+}
+#{$safari} .subscribe-form__item {
+    width: 83.243243243%;
+}
+#{$safari} .subscribe-form__item-text::placeholder {text-indent: 0;}
+#{$safari} .subscribe-form__item-text::-webkit-input-placeholder {text-indent: 0;}
+#{$safari} .main-links {
+    width: 210px;
+}
+#{$safari} .main-links__logo {
+    background-image: url(../img/links/logo_black.png);
+}
+#{$safari} .additional-links {
+    width: 66.756756756%;
+}
+@media screen and (max-width: 1100px) {
+    #{$safari} .box-features-list__item {
+        display: inline-block;
+        width: 49%;
+    }
+    #{$safari} .box-features-list {
+        display: block;
+    }
+}
